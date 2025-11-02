@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  const API_KEY = "66ffd6ea6b06141168d1915bf63e8da3";
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   const fetchWeather = async (cityName) => {
     try {
